@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             if (viewType == 0) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_news, parent, false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_ad, parent, false);
                 return new AdHolder(view);
             } else {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_ad, parent, false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_news, parent, false);
                 return new RowHolder(view);
             }
         }
